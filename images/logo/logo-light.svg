@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="60px" height="19px" viewBox="0 0 60 19" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>logo-light</title>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="logo-light" fill="#FFFFFF" fill-rule="nonzero">
+            <path d="M60,7.10542736e-15 L60,19 L0,19 L0,7.10542736e-15 L60,7.10542736e-15 Z M55,5 L5,5 L5,14 L55,14 L55,5 Z" id="logo" transform="translate(30.000000, 9.500000) scale(-1, 1) rotate(-180.000000) translate(-30.000000, -9.500000) "></path>
+        </g>
+    </g>
+</svg>

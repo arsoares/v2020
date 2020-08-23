@@ -1,0 +1,287 @@
+@use 'styles/theme';
+/* Import Fonts */
+@font-face {
+  font-family: Akzidenz-light;
+  src: local("../src/fonts/AkzidenzGroteskBE-Light.woff"), url("../src/fonts/AkzidenzGroteskBE-Light.woff") format("woff"); }
+
+@font-face {
+  font-family: Akzidenz-regular;
+  src: local("../src/fonts/AkzidenzGroteskBE-Regular.woff"), url("../src/fonts/AkzidenzGroteskBE-Regular.woff") format("woff"); }
+
+@font-face {
+  font-family: Akzidenz-medium;
+  src: local("../src/fonts/AkzidenzGroteskBE-Medium.woff"), url("../src/fonts/AkzidenzGroteskBE-Medium.woff") format("woff"); }
+
+@font-face {
+  font-family: Akzidenz-bold;
+  src: local("../src/fonts/AkzidenzGroteskBE-Bold.woff"), url("../src/fonts/AkzidenzGroteskBE-Bold.woff") format("woff"); }
+
+@font-face {
+  font-family: Akzidenz-super;
+  src: local("../src/fonts/AkzidenzGroteskBE-Super.woff"), url("../src/fonts/AkzidenzGroteskBE-Super.woff") format("woff"); }
+
+/* Heading Font Apperance */
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+h1, h2, h3, h4 {
+  font-family: 'Akzidenz-super', 'Helvetica Neue', 'Open Sans', sans-serif;
+  margin: 0px;
+  padding-bottom: 0px; }
+
+h1 {
+  font-family: 'Akzidenz-bold', sans-serif;
+  font-size: 3.2rem;
+  line-height: 3.2rem; }
+
+h2 {
+  font-family: 'Akzidenz-bold', sans-serif;
+  font-size: 2.2rem;
+  line-height: 2.2rem; }
+
+h3 {
+  font-family: 'Akzidenz-bold', sans-serif;
+  font-size: 1.6rem;
+  line-height: 1.8rem; }
+
+h4 {
+  font-family: 'Akzidenz-bold', sans-serif;
+  font-size: 1.2rem;
+  line-height: 1.2rem;
+  text-transform: uppercase; }
+
+/* Paragraph and Subtitle Font Appearance */
+p {
+  font-family: 'Akzidenz-super', 'Helvetica Neue', 'Open Sans', sans-serif;
+  font-size: 1.5rem;
+  line-height: 2.2rem; }
+
+.subtitle--title {
+  font-family: 'Akzidenz-bold', sans-serif;
+  font-size: 1rem; }
+
+.subtitle--body {
+  font-family: 'Akzidenz-regular', sans-serif;
+  font-size: 1rem; }
+
+/* Link Styles */
+.button--small {
+  width: auto;
+  padding: 16px 24px;
+  background: rgba(26, 106, 255, 0.08);
+  border-radius: 100px;
+  font-family: 'Akzidenz-medium', sans-serif;
+  text-decoration: none;
+  color: #1a6aff; }
+
+.button--small:hover {
+  background: #1a6aff;
+  color: #FFFFFF;
+  box-shadow: 0 0 1px 0 rgba(40, 43, 48, 0.1), 0 6px 10px rgba(40, 43, 48, 0.1), 0 1px 2px rgba(40, 43, 48, 0.2); }
+
+.button--small:active {
+  background: rgba(26, 106, 255, 0.7);
+  color: #222;
+  box-shadow: 0 0 1px 0 rgba(40, 43, 48, 0.1), 0 6px 10px rgba(40, 43, 48, 0.1), 0 1px 2px rgba(40, 43, 48, 0.2); }
+
+/* Font Weights */
+.style--light {
+  font-family: 'Akzidenz-light', sans-serif; }
+
+.style--regular {
+  font-family: 'Akzidenz-regular', sans-serif; }
+
+.style--medium {
+  font-family: 'Akzidenz-medium', sans-serif; }
+
+.style--bold {
+  font-family: 'Akzidenz-bold', sans-serif; }
+
+.style--super {
+  font-family: 'Akzidenz-super', sans-serif; }
+
+/* Appearances */
+.style--underline {
+  text-decoration: underline; }
+
+/* Wrapper Setup */
+.wrapper--page {
+  margin: 0 auto;
+  width: 90vw; }
+
+/* Page Sections */
+.section--intro, .section--portfolio {
+  margin-top: 100px; }
+
+.subsection--portfolio {
+  position: relative;
+  margin-top: 100px; }
+
+/* Navigation Setup */
+.section--navigation {
+  content: "";
+  clear: both;
+  display: table;
+  margin-top: 100px; }
+
+.section--navigation ul {
+  list-style-type: none;
+  padding: 0px;
+  margin: 0px;
+  position: relative; }
+
+.section--navigation li {
+  float: left; }
+
+.nav--link {
+  text-decoration: none;
+  font-size: 1.4em;
+  margin-right: 80px; }
+
+.grid--row {
+  display: table;
+  width: 100%;
+  height: auto;
+  position: relative;
+  margin-bottom: 80px; }
+
+.content--cover {
+  position: relative;
+  width: 100%;
+  float: left;
+  max-width: 1600px; }
+
+.content--cover:after {
+  content: "";
+  display: block;
+  padding-bottom: 50%; }
+
+.content--block {
+  position: relative;
+  width: 50%;
+  float: left;
+  max-width: 800px; }
+
+.content--block:after {
+  content: "";
+  display: block;
+  padding-bottom: 100%; }
+
+.content {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  padding: 16% 80px;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box; }
+
+.content--edgerail {
+  padding-left: 0px !important; }
+
+.position--left {
+  position: relative;
+  float: left !important; }
+
+.position--right {
+  position: relative;
+  float: right !important; }
+
+/* Media Queries */
+@media all and (min-width: 1200px) {
+  /* type */
+  h1 {
+    font-size: 4.2rem;
+    line-height: 4.2rem; }
+  h2 {
+    font-size: 2.6rem;
+    line-height: 2.8rem; }
+  h3 {
+    font-size: 2.2rem;
+    line-height: 2.6rem; }
+  h4 {
+    font-size: 1.6rem;
+    line-height: 2.0rem; }
+  /* wrapper */
+  .wrapper--page {
+    min-width: 952px;
+    max-width: 1600px;
+    width: 90vw; }
+  .section--intro, .section--portfolio {
+    margin-top: 300px; } }
+
+@media all and (max-width: 1200px) and (min-width: 750px) {
+  /* type */
+  h1 {
+    font-size: 3.8rem;
+    line-height: 3.8rem; }
+  h2 {
+    font-size: 3.7vw;
+    line-height: 2.2rem; }
+  h3 {
+    font-size: 2.0rem;
+    line-height: 2.0rem; }
+  h4 {
+    font-size: 1.6rem;
+    line-height: 2.0rem; }
+  p {
+    font-size: 2.2vw;
+    line-height: 3.0vw; }
+  /* wrapper */
+  .wrapper--page {
+    min-width: 702px;
+    max-width: 952px;
+    width: 90vw; }
+  .section--intro, .section--portfolio {
+    margin-top: 160px; }
+  .section--navigation {
+    margin-top: 80px; }
+  .nav--link {
+    margin-right: 64px; }
+  /* grid */
+  .content {
+    padding: 3vw; } }
+
+@media all and (max-width: 750px) and (min-width: 480px) {
+  /* type */
+  p {
+    font-size: 1.2rem;
+    line-height: 2.0rem; }
+  /* wrapper */
+  .wrapper--page {
+    min-width: 448ppx;
+    max-width: 702px;
+    width: 90vw; }
+  .section--navigation {
+    margin-top: 40px; }
+  .nav--link {
+    margin-right: 40px; }
+  /* grid */
+  .grid--row {
+    margin-bottom: 40px; }
+  .content--block {
+    width: 100%; }
+  .content {
+    padding: 60px 0px; } }
+
+@media all and (max-width: 480px) and (min-width: 0px) {
+  /* type */
+  p {
+    font-size: 1.2rem;
+    line-height: 2.0rem; }
+  /* wrapper */
+  .wrapper--page {
+    max-width: 448px;
+    width: 90vw; }
+  .section--navigation {
+    margin-top: 40px; }
+  .nav--link {
+    margin-right: 24px; }
+  /* grid */
+  .grid--row {
+    margin-bottom: 40px; }
+  .content--block {
+    width: 100%; }
+  .content {
+    padding: 32px 0px 0px 0px; } }

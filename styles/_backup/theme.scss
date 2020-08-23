@@ -1,0 +1,69 @@
+@use 'styles/theme';
+
+// system definitions
+$white: rgba(255,255,255,1.0);
+$bluegrey: rgba(242,242,247,1.0);
+$grey1: rgba(44,44,46,1.0);
+$grey2: rgba(28,28,30,1.0);
+$black: rgba(0,0,0,1.0);
+  // light appearance
+  $system--primary-light: $white;
+  $system--secondary-light: $bluegrey;
+  $system--tertiary-light: $white;
+  // dark appearance
+  $system--primary-dark: $black;
+  $system--secondary-dark: $grey2;
+  $system--tertiary-dark: $grey1;
+
+//system shadow
+$system--dropshadow: 0 0 1px 0 rgba(40,43,48,.1),0 6px 10px rgba(40,43,48,.1),0 1px 2px rgba(40,43,48,.2);
+$system--insetshadow-light: inset 0 0 0 1px rgba(40,43,48,.065);
+$system--insetshadow-dark: inset 0 0 0 1px rgba(255,255,255,.1);
+//special effects
+.effect--noeffects {-webkit-box-shadow:none;-moz-box-shadow:none;box-shadow:none;background:none !important;}
+  // roundness
+  .effect--rounded {border-radius: .5em;}
+  .effect--left-round {border-radius: .5em 0em 0em .5em;}
+  .effect--right-round {border-radius: 0px .5em .5em 0em;}
+  .effect--top-round {border-radius: .5em .5em 0em 0em;}
+  .effect--bottom-round {border-radius: 0em 0em .5em .5em;}
+  .effect--circular {border-radius: 1000px;}
+  // shadows
+  .effect--dropshadow {-webkit-box-shadow:$system--dropshadow;-moz-box-shadow:$system--dropshadow;box-shadow:$system--dropshadow;}
+  .effect--insetshadow {-webkit-box-shadow:$system--insetshadow-light;-moz-box-shadow:$system--insetshadow-light;box-shadow:$system--insetshadow-light;}
+
+  // system images
+$system--logo--light: url(../images/logo/logo-light.svg) center center;
+$system--logo--dark: url(../images/logo/logo-dark.svg) center center;
+  // nav logo  
+  $system--logo--position: 0 0;
+  $system--logo--size: 60px 19px;
+  $system--logo--repeat: no-repeat;
+
+// theme definitions
+$chewy-light: rgba(18,140,237,1.0);
+$chewy-dark: rgba(18,140,237,1.0);
+
+@media (prefers-color-scheme: light) {
+  body {background: $system--primary-light;}
+  .frame {background: $system--secondary-light;}
+  .frame--inner {background: $system--tertiary-light;}
+  .frame--empty {background: none;}
+  .type {color: $system--primary-dark;}
+  .type a {color: $system--primary-dark;}
+  .type-invert {color: $system--primary-light;}
+  .image--mark {background: $system--logo--dark;background-position:$system--logo--position; background-repeat:$system--logo--repeat;background-size:$system--logo--size;}
+  .effect--insetshadow {-webkit-box-shadow:$system--insetshadow-light;-moz-box-shadow:$system--insetshadow-light;box-shadow:$system--insetshadow-light;}
+  .theme--chewy {background: $chewy-light;}
+}
+@media (prefers-color-scheme: dark) {
+  body {background: $system--primary-dark;}
+  .frame {background: $system--secondary-dark;}
+  .frame--inner {background: $system--tertiary-dark;}
+  .type {color: $system--primary-light;}
+  .type a {color: $system--primary-light;}
+  .type-invert {color: $system--primary-dark;}
+  .image--mark {background: $system--logo--light;background-position:$system--logo--position; background-repeat:$system--logo--repeat;background-size:$system--logo--size;}
+  .effect--insetshadow {-webkit-box-shadow:$system--insetshadow-dark;-moz-box-shadow:$system--insetshadow-dark;box-shadow:$system--insetshadow-dark;}
+  .theme--chewy {background: $chewy-dark;}
+}
