@@ -30,33 +30,6 @@
 		"oAP": "\/build.html",
 		"oF": 0
 		},
-	"\/flex\/background_styles.css": {
-		"aP": 1,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "\/flex\/background_styles-min.css",
-		"oF": 1,
-		"oS": 3
-		},
-	"\/flex\/flex-test.html": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 1,
-		"oAP": "\/flex\/flex-test.html",
-		"oF": 1
-		},
-	"\/flex\/styles.css": {
-		"aP": 1,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "\/flex\/styles-min.css",
-		"oF": 1,
-		"oS": 3
-		},
 	"\/images\/chewy-ini-1.png": {
 		"ft": 32768,
 		"iS": 204662,
